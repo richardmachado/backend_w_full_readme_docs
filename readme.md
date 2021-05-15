@@ -53,7 +53,7 @@ module.exports = server;
 ```
 
 
-## Step 7 - npm run start - TIME TO TEST THIS!
+## Step 7 - npm run start - TIME TO TEST THIS! 
 
 in your terminal, type `npm run start` or `yarn start` and hit `enter`
 
