@@ -92,7 +92,7 @@ server.get('/', (req, res) => {
 ```
 
 go to your browser and navigate to `http://localhost:4000`
-[localhost:4000](http://localhost:4000){:target="_blank"}
+[localhost:4000](http://localhost:4000)
 
 you should get the response 
 "Your server is up and running!"
