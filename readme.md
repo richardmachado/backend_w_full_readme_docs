@@ -80,3 +80,21 @@ in your terminal type
 `touch .gitignore && echo "node_modules/" >> .gitignore && echo ".env" >> .gitignore`
 
 this will create the file, which prevents node_modules and .env from being commmited 
+
+## Step 9 - Let's create an endpoint
+
+in server.js add the following code
+
+```
+server.get('/', (req, res) => {
+	res.send("Your server is up and running!");
+});
+```
+
+go to your browser and navigate to `http://localhost:4000`
+[localhost:4000](http://localhost:4000)
+
+you should get the response 
+"Your server is up and running!"
+
+
