@@ -83,7 +83,7 @@ this will create the file, which prevents node_modules and .env from being commm
 
 ## Step 9 - Let's create an endpoint
 
-in server.js add the following code
+in server.js add the following code above the last line (module.exports)
 
 ```
 server.get('/', (req, res) => {
@@ -92,7 +92,7 @@ server.get('/', (req, res) => {
 ```
 
 go to your browser and navigate to `http://localhost:4000`
-[localhost:4000](http://localhost:4000)
+[localhost:4000](http://localhost:4000){:target="_blank"}
 
 you should get the response 
 "Your server is up and running!"
