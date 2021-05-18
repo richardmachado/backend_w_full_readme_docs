@@ -1,9 +1,11 @@
 # How to create a node.js backend with Express
 
-## Step 1  - skip if you already initalized it as a git repo
-`git init` 
+## Step 1 - skip if you already initalized it as a git repo
+
+`git init`
 
 ## Step 2 - initialize your project
+
 `npm init -y`
 
 creates a package.json
@@ -12,16 +14,16 @@ creates a package.json
 
 `npm i nodemon express knex sqlite3 bcryptjs cors helmet pg morgan jsonwebtoken dotenv`
 
-## Step 4 --  add a start script to package.json
+## Step 4 -- add a start script to package.json
 
-```  
+```
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "nodemon index.js"
   },
 ```
 
-## Step 5 -- add index.js in root of project 
+## Step 5 -- add index.js in root of project
 
 ```
 const server = require('./api/server.js');
@@ -52,8 +54,7 @@ server.use(express.json());
 module.exports = server;
 ```
 
-
-## Step 7 - npm run start - TIME TO TEST THIS! 
+## Step 7 - npm run start - TIME TO TEST THIS!
 
 in your terminal, type `npm run start` or `yarn start` and hit `enter`
 
@@ -79,7 +80,7 @@ You should ignore node modules and .env files from being pushed to github
 in your terminal type
 `touch .gitignore && echo "node_modules/" >> .gitignore && echo ".env" >> .gitignore`
 
-this will create the file, which prevents node_modules and .env from being commmited 
+this will create the file, which prevents node_modules and .env from being commmited
 
 ## Step 9 - Let's create an endpoint
 
@@ -94,7 +95,19 @@ server.get('/', (req, res) => {
 go to your browser and navigate to `http://localhost:4000`
 [localhost:4000](http://localhost:4000)
 
-you should get the response 
+you should get the response
 "Your server is up and running!"
 
+# Let's setup a database, both for developement and production
 
+## Step 1 - create knexfile
+
+in your terminal type
+
+`knex init`
+
+Side note- if your get knex:command not found, you need to install knex globally
+
+`npm i -g knex` or `yard add -g knex`
+
+This creates a file called knexfile.js, this has defaults of development, staging (which we wont really use), amd development, we will fix production at deployment with Heroku

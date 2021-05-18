@@ -7,8 +7,8 @@ server.use(helmet());
 server.use(cors());
 server.use(express.json());
 
-server.get('/', (req, res) => {
-	res.send("Your server is up and running!");
+server.get("/", (req, res) => {
+  res.send("Your server is up and running!");
 });
 
-module.exports = server; 
+module.exports = server;
