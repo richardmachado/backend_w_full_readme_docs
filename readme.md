@@ -106,8 +106,10 @@ in your terminal type
 
 `knex init`
 
-Side note- if your get knex:command not found, you need to install knex globally
+### --> Side note- if your get knex: command not found, you need to install knex globally
 
 `npm i -g knex` or `yard add -g knex`
 
-This creates a file called knexfile.js, this has defaults of development, staging (which we wont really use), amd development, we will fix production at deployment with Heroku
+This creates a file called knexfile.js, this has defaults of development, staging (which we won't really use), amd development, we will fix production at deployment with Heroku
+
+## Step 2 - 
